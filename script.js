@@ -62,7 +62,10 @@ function closeModal() {
 	openModal.classList.remove('is-open');
 	window.removeEventListener('keydown', onRightKeyClick);
 	window.removeEventListener('keydown', onLeftKeyClick);
+	 imageModal.src = "";
+  	 imageModal.alt = "";
 }
+
 const onCloseBtnClick = document.querySelector('.lightbox__button');
 onCloseBtnClick.addEventListener('click', closeModal);
 const onOverlayClick = document.querySelector('.lightbox__overlay');
